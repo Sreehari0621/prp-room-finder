@@ -1,0 +1,192 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.head {
+  text-align: center;
+  background-color: #020617;
+  height: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.map-container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  padding: 20px;
+}
+
+.map-image {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  opacity: 70%;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.chatbot {
+  width: 300px;
+  background-color: #020617;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  color: white;
+
+  border-left: 1px solid #1e293b;
+}
+
+.chatbot-header {
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 10px;
+
+  border-bottom: 1px solid #333;
+}
+
+.chat-area {
+  flex: 1;
+  padding: 10px;
+
+  font-size: 15px;
+
+  overflow-y: auto;
+}
+
+.chat-area p {
+  background: #1e293b;
+  color: white;
+
+  padding: 8px 10px;
+  border-radius: 8px;
+
+  margin-bottom: 8px;
+
+  max-width: 80%;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+
+  padding-top: 10px;
+}
+
+.input-area input {
+  flex: 1;
+
+  padding: 10px;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  background: #1e293b;
+  color: white;
+}
+
+.input-area button {
+  padding: 10px 14px;
+
+  background: #3b82f6;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.input-area button:hover {
+  background: #2563eb;
+}
+
+
+.map {
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.row {
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block {
+  width: 300px;
+  height: 120px;
+
+  background: #334155;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.block.active {
+  background: #f59e0b;
+  transform: scale(1.1);
+}
+
+.c-block {
+  width: 300px;
+  height: 180px;
+
+  flex-direction: column;
+  gap: 5px;
+}
+
+.block.long {
+  width: 300px;
+  height: 300px;
+}
+
+.c-block .wing {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.c-block .center {
+  font-size: 24px;
+  font-weight: bold;
+}
+
